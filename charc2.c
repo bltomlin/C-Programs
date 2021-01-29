@@ -5,6 +5,6 @@ main()
 {
     int c;
 
-    c = getchar() != EOF;
-    printf(c);
+    printf(getchar() != EOF);
+    
 }
