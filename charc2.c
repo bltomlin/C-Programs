@@ -4,7 +4,7 @@
 main()
 {
     int c;
-    c = EOF;
+    c = &EOF;
     printf(c);
     
 }
