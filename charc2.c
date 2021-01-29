@@ -7,5 +7,4 @@ main()
 
     while(c = getchar() != EOF)
         printf(c);
-        putchar(c);
 }
