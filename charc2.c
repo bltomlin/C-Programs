@@ -5,6 +5,6 @@ main()
 {
     int c;
 
-    c = EOF;
-    printf("%d", c);
+    while ((c = getchar()) != EOF)
+        putchar();
 }
