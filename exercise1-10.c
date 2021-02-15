@@ -1,17 +1,22 @@
 #include <stdio.h>
 
-main(){
-    int c;
+#define BACKSPACE 8 /* ascii for backspace */
+#define TAB 9       /* ascii for tab */
+#define BACKSLASH 92  /* ascii for backslash */
 
-    c = getchar();
-    while(c != EOF){
-        if(c == '\t')
-            c = '/t';
-        if(c == '\b')
-            c = '/b';
-        if(c == '\\')
-            c == '//';
+main(){
+    int c;                      // initialize the input variable
+    while((c = getchar()) != EOF){            // while Enter has not been pressed
+        if(c == TAB){     
+            c = 0;        
+            printf("\\t");
+        }
+        if(c == BACKSPACE){        
+            printf("\\b");
+        }
+        if(c == BACKSLASH){
+            printf("\\");
+        }
         putchar(c);
-        c = getchar();
     }
 }
